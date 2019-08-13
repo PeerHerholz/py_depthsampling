@@ -1,0 +1,26 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
+include requirements.txt
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat
+
+include versioneer.py
+include py_depthsampling/_version.py
+include py_depthsampling/py_depthsampling.boot
+include py_depthsampling/py_depthsampling.crf
+include py_depthsampling/py_depthsampling.drain_model
+include py_depthsampling/py_depthsampling.eccentricity
+include py_depthsampling/py_depthsampling.ert
+include py_depthsampling/py_depthsampling.get_data
+include py_depthsampling/py_depthsampling.main
+include py_depthsampling/py_depthsampling.misc
+include py_depthsampling/py_depthsampling.permutation
+include py_depthsampling/py_depthsampling.plot
+
+# If including data files in the package, add them like:
+# include path/to/data_file
